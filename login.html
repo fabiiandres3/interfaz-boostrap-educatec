@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Scholaris Academy</title>
+    <!-- Enlace a tus estilos base -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="login-body">
+
+    <!-- Contenedor Principal Centrado -->
+    <div class="container d-flex align-items-center justify-content-center min-vh-100 py-5">
+        <div class="card login-card shadow-lg border-0 overflow-hidden">
+            <div class="row g-0 h-100">
+
+                <!-- Columna Izquierda: Formulario -->
+                <div class="col-lg-6 d-flex align-items-center bg-white">
+                    <div class="p-4 p-md-5 w-100">
+
+                        <!-- Botón Volver al Inicio -->
+                        <div class="mb-4">
+                            <a href="index.html"
+                                class="text-decoration-none small fw-semibold text-secondary back-to-home">
+                                <i class="fas fa-arrow-left me-2"></i>Volver al inicio
+                            </a>
+                        </div>
+
+                        <!-- Encabezado del Login -->
+                        <div class="mb-4 text-center text-lg-start">
+                            <div class="login-brand mb-2">
+                                <i class="fas fa-graduation-cap text-primary fs-3"></i>
+                                <span class="fw-bold fs-4 text-navy ms-2">Educatec</span>
+                            </div>
+                            <h3 class="fw-bold text-navy">¡Bienvenido de nuevo!</h3>
+                            <p class="text-muted small">Ingresa a la plataforma educativa del bachillerato.</p>
+                        </div>
+
+                        <!-- Formulario de Acceso -->
+                        <form>
+                            <!-- Input: Correo Electrónico -->
+                            <div class="mb-3">
+                                <label for="email" class="form-label small fw-semibold text-navy">Correo
+                                    Institucional</label>
+                                <div class="input-group login-input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <input type="email" class="form-control bg-light border-start-0" id="email"
+                                        placeholder="usuario@colegio.edu" required>
+                                </div>
+                            </div>
+
+                            <!-- Input: Contraseña -->
+                            <div class="mb-3">
+                                <label for="password" class="form-label small fw-semibold text-navy">Contraseña</label>
+                                <div class="input-group login-input-group">
+                                    <span class="input-group-text bg-light border-end-0 text-muted">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                    <input type="password" class="form-control bg-light border-start-0" id="password"
+                                        placeholder="••••••••" required>
+                                </div>
+                            </div>
+
+                            <!-- Recordarme y Olvidé mi contraseña -->
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                                    <label class="form-check-label small text-muted" for="rememberMe">Recordarme</label>
+                                </div>
+                                <a href="#" class="small text-decoration-none text-primary fw-semibold">¿Olvidaste tu
+                                    contraseña?</a>
+                            </div>
+
+                            <!-- Botón Ingresar Principal -->
+                            <button type="submit" class="btn w-100 btn-login fw-bold text-white shadow-sm mb-4">
+                                Iniciar Sesión <i class="fas fa-sign-in-alt ms-2"></i>
+                            </button>
+
+                            <!-- Divisor Visual -->
+                            <div class="position-relative text-center my-4 login-divider">
+                                <span class="bg-white px-3 text-muted small position-relative z-2">O continuar
+                                    con</span>
+                            </div>
+
+                            <!-- Botones de Inicio de Sesión Alternativos con fondo circular fijo de color -->
+                            <div class="row g-3 mb-3 justify-content-center">
+                                <!-- Google / Gmail (Rojo) -->
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-social-circle btn-social-google"
+                                        title="Iniciar sesión con Google">
+                                        <i class="fab fa-google"></i>
+                                    </button>
+                                </div>
+                                <!-- Facebook (Azul) -->
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-social-circle btn-social-facebook"
+                                        title="Iniciar sesión con Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </button>
+                                </div>
+                                <!-- Outlook / Hotmail / Windows (Azul) -->
+                                <div class="col-auto">
+                                    <button type="button" class="btn btn-social-circle btn-social-outlook"
+                                        title="Iniciar sesión con Outlook/Windows">
+                                        <i class="fab fa-windows"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Pie del Formulario -->
+                        <div class="mt-4 text-center">
+                            <p class="small text-muted mb-0">¿Problemas para acceder? <a href="#"
+                                    class="text-decoration-none text-primary fw-semibold">Contactar a Soporte</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Panel Visual Integrado (Oculto en móviles) -->
+                <div class="col-lg-6 d-none d-lg-flex align-items-center justify-content-center login-panel-right">
+                    <div class="text-center text-white p-5 login-right-content position-relative">
+                        <h2 class="fw-bold mb-3">Portal de Bachillerato</h2>
+                        <p class="mx-auto text-light opacity-75 small" style="max-width: 340px;">
+                            Accede a tus clases virtuales, calificaciones, proyectos tecnológicos y eventos de la
+                            comunidad escolar[cite: 1].
+                        </p>
+                        <!-- Adorno decorativo -->
+                        <div
+                            class="mt-4 login-mini-stats d-inline-flex align-items-center gap-2 bg-white bg-opacity-10 px-3 py-2 rounded-pill">
+                            <i class="fas fa-shield-alt text-cyan"></i>
+                            <span class="small fw-semibold">Conexión 100% Segura</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
