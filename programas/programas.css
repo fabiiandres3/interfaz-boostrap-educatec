@@ -1,0 +1,133 @@
+/* ==========================
+   PROGRAMAS MODERNOS
+========================== */
+
+.programas-section {
+    background: #f8fafc;
+}
+
+.badge-programas {
+    background: #006eff15;
+    color: #006eff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+}
+
+.programas-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.programas-subtitle {
+    color: #64748b;
+    max-width: 600px;
+    margin: auto;
+}
+
+.filtro-btn {
+    border-radius: 30px;
+    padding: 10px 25px;
+    border: none;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    font-weight: 600;
+}
+
+.filtro-btn.active {
+    background: #006eff;
+    color: white;
+}
+
+.program-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .35s;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
+    height: 100%;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+}
+
+.program-image {
+    position: relative;
+}
+
+.program-image img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.program-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 10;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.popular {
+    background: #006eff;
+    color: white;
+}
+
+.nuevo {
+    background: #22c55e;
+    color: white;
+}
+
+.certificado {
+    background: #f59e0b;
+    color: white;
+}
+
+.program-content {
+    padding: 25px;
+}
+
+.program-content h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #0f172a;
+}
+
+.program-content p {
+    color: #64748b;
+    min-height: 70px;
+}
+
+.program-rating {
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+.program-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #64748b;
+    font-size: .9rem;
+}
+
+.btn-programa {
+    width: 100%;
+    background: #006eff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px;
+    font-weight: 600;
+}
+
+.btn-programa:hover {
+    background: #0054c7;
+    color: white;
+}
