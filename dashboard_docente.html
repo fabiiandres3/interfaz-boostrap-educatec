@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educatec - Panel Docente</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="dashboard_docente.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Educatec</span>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-school"></i>
+                    Mis Cursos
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-book"></i>
+                    Tareas
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-chart-column"></i>
+                    Calificaciones
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Asistencia
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    Mensajes
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    Configuración
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- MAIN -->
+
+        <main class="content">
+
+            <!-- TOPBAR -->
+
+            <div class="topbar">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" placeholder="Buscar estudiante...">
+                </div>
+
+                <div class="user-area">
+
+                    <i class="fa-solid fa-bell notification"></i>
+
+                    <div class="user">
+
+                        <img src="https://i.pravatar.cc/60?img=15">
+
+                        <div>
+                            <strong>Carlos Pérez</strong>
+                            <small>Docente</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <div class="icon blue">
+                        <i class="fa-solid fa-user-graduate"></i>
+                    </div>
+
+                    <h3>350</h3>
+                    <p>Estudiantes</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="icon green">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <h3>94%</h3>
+                    <p>Asistencia</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="icon orange">
+                        <i class="fa-solid fa-book-open"></i>
+                    </div>
+
+                    <h3>25</h3>
+                    <p>Tareas</p>
+                </div>
+
+                <div class="stat-card">
+                    <div class="icon purple">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+
+                    <h3>4.5</h3>
+                    <p>Promedio</p>
+                </div>
+
+            </div>
+
+            <!-- GRADOS -->
+
+            <div class="section-card">
+
+                <h4>Mis Grados</h4>
+
+                <div class="grados">
+
+                    <button class="grado active">4°A</button>
+                    <button class="grado">5°A</button>
+                    <button class="grado">6°A</button>
+                    <button class="grado">7°A</button>
+                    <button class="grado">8°A</button>
+                    <button class="grado">9°A</button>
+                    <button class="grado">10°A</button>
+                    <button class="grado">11°A</button>
+
+                </div>
+
+            </div>
+
+            <div class="dashboard-grid">
+
+                <!-- TABLA -->
+
+                <div class="section-card">
+
+                    <div class="header-card">
+
+                        <h4>8°A - Matemáticas</h4>
+
+                        <button class="btn-save">
+                            Guardar Notas
+                        </button>
+
+                    </div>
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Estudiante</th>
+                                <th>Tarea</th>
+                                <th>Parcial</th>
+                                <th>Examen</th>
+                                <th>Asistencia</th>
+                                <th>Promedio</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>Juan Pérez</td>
+
+                                <td><input type="number" value="4.5"></td>
+
+                                <td><input type="number" value="4.0"></td>
+
+                                <td><input type="number" value="4.8"></td>
+
+                                <td>95%</td>
+
+                                <td class="good">4.43</td>
+
+                            </tr>
+
+                            <tr>
+
+                                <td>María Gómez</td>
+
+                                <td><input type="number" value="5"></td>
+
+                                <td><input type="number" value="4.8"></td>
+
+                                <td><input type="number" value="5"></td>
+
+                                <td>100%</td>
+
+                                <td class="good">4.93</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- PANEL DERECHO -->
+
+                <div class="right-panel">
+
+                    <div class="section-card">
+
+                        <h4>Acciones Rápidas</h4>
+
+                        <button class="action-btn">
+                            📝 Nueva Tarea
+                        </button>
+
+                        <button class="action-btn">
+                            📊 Crear Examen
+                        </button>
+
+                        <button class="action-btn">
+                            ✅ Registrar Asistencia
+                        </button>
+
+                        <button class="action-btn">
+                            📨 Enviar Mensaje
+                        </button>
+
+                    </div>
+
+                    <div class="section-card">
+
+                        <h4>Próximas Actividades</h4>
+
+                        <ul class="activities">
+                            <li>Entrega Proyecto Final</li>
+                            <li>Parcial Matemáticas</li>
+                            <li>Reunión de Padres</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="dashboard_docente.js"></script>
+
+</body>
+
+</html>
