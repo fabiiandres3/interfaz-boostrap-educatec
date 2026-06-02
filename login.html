@@ -43,7 +43,7 @@
                         </div>
 
                         <!-- Formulario de Acceso -->
-                        <form>
+                        <form id="loginForm">
                             <!-- Input: Correo Electrónico -->
                             <div class="mb-3">
                                 <label for="email" class="form-label small fw-semibold text-navy">Correo
@@ -80,9 +80,11 @@
                             </div>
 
                             <!-- Botón Ingresar Principal -->
-                            <button type="submit" class="btn w-100 btn-login bg bg-primary fw-bold text-white shadow-sm mb-4">
+                            <button type="submit"
+                                class="btn w-100 btn-login bg bg-primary fw-bold text-white shadow-sm mb-4">
                                 Iniciar Sesión <i class="fas fa-sign-in-alt ms-2"></i>
                             </button>
+                            <p id="errorLogin" class="text-danger text-center small mt-2"></p>
 
                             <!-- Divisor Visual -->
                             <div class="position-relative text-center my-4 login-divider">
@@ -144,6 +146,71 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        document.getElementById("loginForm")
+            .addEventListener("submit", function (e) {
+
+                e.preventDefault();
+
+                const email =
+                    document.getElementById("email")
+                        .value
+                        .trim();
+
+                const password =
+                    document.getElementById("password")
+                        .value
+                        .trim();
+
+                const error =
+                    document.getElementById("errorLogin");
+
+                error.textContent = "";
+
+                // DOCENTE
+
+                if (
+                    email === "docente@educatec.com" &&
+                    password === "12345"
+                ) {
+
+                    localStorage.setItem(
+                        "rol",
+                        "docente"
+                    );
+
+                    window.location.href =
+                        "dashboard_docente.html";
+
+                    return;
+                }
+
+                // ALUMNO
+
+                if (
+                    email === "alumno@educatec.com" &&
+                    password === "12345"
+                ) {
+
+                    localStorage.setItem(
+                        "rol",
+                        "alumno"
+                    );
+
+                    window.location.href =
+                        "dashboard_alumno.html";
+
+                    return;
+                }
+
+                error.textContent =
+                    "Correo o contraseña incorrectos";
+
+            });
+
+    </script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

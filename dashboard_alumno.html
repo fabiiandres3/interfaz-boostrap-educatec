@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educatec - Portal Estudiantil</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard_alumno.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Educatec</span>
+            </div>
+
+            <ul class="menu">
+
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    Inicio
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-book-open"></i>
+                    Materias
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-file-lines"></i>
+                    Tareas
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-chart-column"></i>
+                    Calificaciones
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Asistencia
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    Mensajes
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-trophy"></i>
+                    Logros
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-gear"></i>
+                    Configuración
+                </li>
+
+                <li id="logoutBtn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Cerrar Sesión
+                </li>
+
+            </ul>
+
+        </aside>
+
+        <!-- CONTENIDO -->
+
+        <main class="content">
+
+            <!-- TOPBAR -->
+
+            <div class="topbar">
+
+                <div class="welcome">
+                    <h2>Hola, Juan Pérez 👋</h2>
+                    <p>Bienvenido nuevamente a Educatec</p>
+                </div>
+
+                <div class="user-area">
+
+                    <div class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+
+                    <div class="profile">
+
+                        <img src="https://i.pravatar.cc/120?img=12" alt="Alumno">
+
+                        <div>
+                            <strong>Juan Pérez</strong>
+                            <small>8°A</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ESTADISTICAS -->
+
+            <div class="stats">
+
+                <div class="stat-card">
+
+                    <div class="stat-icon blue">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div>
+                        <h3>4.7</h3>
+                        <p>Promedio General</p>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon green">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <div>
+                        <h3>96%</h3>
+                        <p>Asistencia</p>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon orange">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                    <div>
+                        <h3>5</h3>
+                        <p>Tareas Pendientes</p>
+                    </div>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <div class="stat-icon purple">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+
+                    <div>
+                        <h3>8</h3>
+                        <p>Logros</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- GRID PRINCIPAL -->
+
+            <div class="dashboard-grid">
+
+                <!-- COLUMNA IZQUIERDA -->
+
+                <div class="main-column">
+
+                    <!-- TAREAS -->
+
+                    <div class="section-card">
+
+                        <div class="section-header">
+
+                            <h4>Tareas Pendientes</h4>
+
+                            <a href="#">Ver todas</a>
+
+                        </div>
+
+                        <div class="task-card">
+
+                            <div>
+                                <h6>Matemáticas</h6>
+                                <p>Resolver ecuaciones cuadráticas.</p>
+                            </div>
+
+                            <span class="badge danger">
+                                Mañana
+                            </span>
+
+                        </div>
+
+                        <div class="task-card">
+
+                            <div>
+                                <h6>Biología</h6>
+                                <p>Mapa conceptual del sistema digestivo.</p>
+                            </div>
+
+                            <span class="badge warning">
+                                3 días
+                            </span>
+
+                        </div>
+
+                        <div class="task-card">
+
+                            <div>
+                                <h6>Inglés</h6>
+                                <p>Presentación oral sobre hobbies.</p>
+                            </div>
+
+                            <span class="badge success">
+                                5 días
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- MATERIAS -->
+
+                    <div class="section-card">
+
+                        <div class="section-header">
+
+                            <h4>Mis Materias</h4>
+
+                        </div>
+
+                        <div class="subjects-grid">
+
+                            <div class="subject-card">
+                                <i class="fa-solid fa-calculator"></i>
+                                <h6>Matemáticas</h6>
+                                <span>Promedio: 4.8</span>
+                            </div>
+
+                            <div class="subject-card">
+                                <i class="fa-solid fa-flask"></i>
+                                <h6>Biología</h6>
+                                <span>Promedio: 4.5</span>
+                            </div>
+
+                            <div class="subject-card">
+                                <i class="fa-solid fa-language"></i>
+                                <h6>Inglés</h6>
+                                <span>Promedio: 4.9</span>
+                            </div>
+
+                            <div class="subject-card">
+                                <i class="fa-solid fa-book-open"></i>
+                                <h6>Español</h6>
+                                <span>Promedio: 4.6</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- HORARIO -->
+
+                    <div class="section-card">
+
+                        <div class="section-header">
+                            <h4>Horario de Hoy</h4>
+                        </div>
+
+                        <table class="schedule-table">
+
+                            <tr>
+                                <td>07:00</td>
+                                <td>Matemáticas</td>
+                                <td>Salón 203</td>
+                            </tr>
+
+                            <tr>
+                                <td>08:00</td>
+                                <td>Español</td>
+                                <td>Salón 105</td>
+                            </tr>
+
+                            <tr>
+                                <td>09:00</td>
+                                <td>Biología</td>
+                                <td>Laboratorio</td>
+                            </tr>
+
+                            <tr>
+                                <td>10:00</td>
+                                <td>Inglés</td>
+                                <td>Salón 301</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <!-- PANEL DERECHO -->
+
+                <div class="side-column">
+
+                    <!-- EXAMENES -->
+
+                    <div class="section-card">
+
+                        <h4>Próximos Exámenes</h4>
+
+                        <ul class="event-list">
+
+                            <li>
+                                📝 Matemáticas
+                                <span>10 Junio</span>
+                            </li>
+
+                            <li>
+                                🧪 Biología
+                                <span>12 Junio</span>
+                            </li>
+
+                            <li>
+                                🇬🇧 Inglés
+                                <span>15 Junio</span>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- EVENTOS -->
+
+                    <div class="section-card">
+
+                        <h4>Eventos Escolares</h4>
+
+                        <ul class="event-list">
+
+                            <li>
+                                🎓 Feria Científica
+                            </li>
+
+                            <li>
+                                ⚽ Torneo Deportivo
+                            </li>
+
+                            <li>
+                                🎭 Semana Cultural
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- LOGROS -->
+
+                    <div class="section-card">
+
+                        <h4>Mis Logros</h4>
+
+                        <div class="achievement">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                            <div>
+                                <strong>Excelente Asistencia</strong>
+                                <p>96% de asistencia</p>
+                            </div>
+
+                        </div>
+
+                        <div class="achievement">
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <div>
+                                <strong>Alto Rendimiento</strong>
+                                <p>Promedio superior a 4.5</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="dashboard_alumno.js"></script>
+
+</body>
+
+</html>
