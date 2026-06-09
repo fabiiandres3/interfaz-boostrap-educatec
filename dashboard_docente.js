@@ -18,7 +18,9 @@ const logoutBtn = document.getElementById("logoutBtn");
 
 if (logoutBtn) {
 
-    logoutBtn.addEventListener("click", () => {
+    logoutBtn.addEventListener("click", (e) => {
+
+        e.preventDefault();
 
         const confirmar = confirm(
             "¿Deseas cerrar sesión?"
@@ -29,6 +31,7 @@ if (logoutBtn) {
             localStorage.removeItem("rol");
 
             window.location.href = "index.html";
+
         }
 
     });

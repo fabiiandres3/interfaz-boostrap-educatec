@@ -158,16 +158,31 @@ body {
 table {
     width: 100%;
     margin-top: 20px;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #f4f7fc;
+}
+
+th {
+    font-weight: 600;
+    color: #081b3a;
 }
 
 th,
 td {
     padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
 }
 
 input[type="number"] {
-    width: 70px;
+    width: 80px;
     padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
 }
 
 .good {
@@ -181,6 +196,14 @@ input[type="number"] {
     padding: 15px;
     border: none;
     border-radius: 10px;
+    background: #eef4ff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.action-btn:hover {
+    background: #006eff;
+    color: white;
 }
 
 .btn-save {
@@ -189,6 +212,12 @@ input[type="number"] {
     border: none;
     padding: 12px 20px;
     border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btn-save:hover {
+    background: #0052bf;
 }
 
 .activities {
@@ -197,4 +226,61 @@ input[type="number"] {
 
 .activities li {
     margin-bottom: 10px;
+}
+
+.menu li {
+    transition: background .3s;
+}
+
+.menu li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.notification {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--dark);
+    transition: .3s;
+}
+
+.notification:hover {
+    color: var(--primary);
+}
+
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.config-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    margin-top: 8px;
+    outline: none;
+}
+
+.config-input:focus {
+    border-color: var(--primary);
+}
+
+.topbar-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.preferences label {
+    font-size: 15px;
+    color: var(--dark);
 }
